@@ -1,0 +1,172 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+/* #header {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: darkblue;    
+} */
+
+#kalender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    padding: 0 1em;
+    width: 99%;
+}
+
+#seitenkopf {
+    background-color: blue;
+    padding: 1em;
+    text-align: center;
+    background: darkblue;
+    color: white;
+}
+
+#seitenkopf h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    gap: 1em;
+    flex-direction: column;
+}
+
+table {
+    width: 99%;
+    border-collapse: collapse;
+    font-size: 2em;
+    display: flexbox;
+}
+
+table th {
+    background: lightgrey;
+    border: 1px solid darkblue;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+}
+
+table td {
+    background: white;
+    text-align: center;
+    padding: 0.5em;
+    border: 1px solid darkblue;
+}
+
+td:hover {
+    background: tomato;
+}
+
+td.heute {
+    background: pink;
+}
+#introtext {
+    background-color: powderblue;
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.kw {
+    font-style: italic;
+    font-size: large;
+    cursor: default;
+}
+
+p {
+    font-weight:bold;
+}
+
+div p {
+    font-size: 24px;
+}
+
+div#test p {
+    color: red;
+}
+
+.sa {
+    color: blue;
+}
+
+.so {
+    color: red;
+}
+
+#current_date {
+        color: black;
+}
+
+.heute {
+    color: green;
+}
+
+span {
+    background: lightcoral;
+}
+
+#text-container { 
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#text-container > div {
+    margin-bottom: 0.5em; 
+}
+
+#historie {
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+#historie ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#history {
+    margin-right: 1em;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+}
+
+#btnleft, #btnright {
+    padding: 5px, 10px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    cursor: pointer;
+}

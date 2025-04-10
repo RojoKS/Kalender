@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender von Roman</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <header id="seitenkopf">
+        <h1>Mein Kalenderblatt: <span id="field1">(Datum deutsch)</span></h1>
+    </header>
+    <main id="content-container">
+        <div id="kalender-header">
+            <button id= "btnleft" onclick="previousMonth()">Vorheriger</button>
+            <span id="header"></span>
+            <button id= "btnright" onclick="nextMonth()">Nächster</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="8" id="header"> April 2025</th>
+                </tr>
+                <tr>
+                    <th>KW</th>
+                    <th class="mo">Mo</th>
+                    <th class="di">Di</th>
+                    <th class="mi">Mi</th>
+                    <th class="do">Do</th>
+                    <th class="fr">Fr</th>
+                    <th class="sa">Sa</th>
+                    <th class="so">So</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="text-container">
+            <div id="introtext"> 
+                <p>
+                    Der <span id="field2"></span> ist ein <span id="field4"></span> und der zweite Mittwoch im Monat April des Jahres 2025. Dieser Monat hat 30 Tage. Der 09.04.2025 ist kein gesetzlicher Feiertag in Hessen. Der nächste gesetzliche Feiertag ist der 18.05.2025 (Pfingstmontag).
+                </p>
+            </div>
+            <div id="history">
+                <div id="current_date">
+                    <script>
+                        date = new Date();
+                        day = date.getDate();
+                        month = date.getMonth() + 1;
+                        year = date.getFullYear();
+                        document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                    </script>
+                </div>
+                <div id="debug">
+                    (Test ob es klappt)
+                </div>
+                <div id="historie">
+                    <p>
+                        Historische Ereignisse <span id="field3"Wochentag></span>
+                    </p>
+                    <ul>
+                        <li>
+                            Vor 20 Jahren wurde Papst Johannes Paul II. in Rom in der Basilika San Pietro beigesetzt.
+                        </li>                        
+                        <li>
+                            Vor 241 Jahren entdeckte der deutsch-britische Astronom Wilhelm Herschel sechs zuvor unbekannte Galaxien.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Dieser Kalender ist Besitz und Eigentum von Roman Empire
+        </p>
+    </footer>
+    <script src="main.js"></script>    
+</body>
+
+</html>
