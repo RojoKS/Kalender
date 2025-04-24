@@ -105,7 +105,6 @@ function changeDate(newDate) {
 
 function createCalendar() {
     let parent = document.getElementsByTagName("tbody")[0];
-    console.log('parent: ' + parent);
     parent.innerHTML = "";
     const daysInMonth = new Date(datToday.getFullYear(), datToday.getMonth() + 1, 0).getDate();
     console.log('daysInMonth: ' +  daysInMonth);
